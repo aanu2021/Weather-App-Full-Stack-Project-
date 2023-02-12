@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    {{>headerLink}}
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    {{>navbar}}
+
+
+    <!-- Main Header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+
+                    <!-- Right Side Div -->
+                    <div class="col-md-6 col-12 main_header_right align-items-center">
+                        <figure>
+                            <img src="images/404.png" alt="404 error" class="errorImage img-fluid" style="width:30rem;border:none;">
+                        </figure>
+                    </div>
+                    <!-- Left Side Div -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <h1>Oops !!! <span class="txt_clr">404 error, </span>page can't be found</h1>
+                        <a href="/"><button>Go Back</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer code  -->
+
+    {{>footer}}
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    {{>headerLink}}
+
+    <style>
+        .main_header_right figure img {
+            width: 20rem;
+            height: 26rem;
+            filter: drop-shadow(0rem 0.5rem 1rem rgba(0, 0, 0, 0.3));
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    {{>navbar}}
+
+
+    <!-- Main Header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+
+                    <!-- Right Side Div -->
+                    <div class="col-md-6 col-12 main_header_right align-items-center">
+                        <figure>
+                            <img src="images/about.png" alt="404 error" class="img-fluid">
+                        </figure>
+                    </div>
+                    <!-- Left Side Div -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Welcome To My Introduction Page</p>
+                        <h1>I am a <span class="txt_clr">Mern Stack Developer</span></h1>
+                        <a href="https://www.linkedin.com/in/anumoy-nandy-9b527b204/" target="_blank"><button>check
+                                now</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer code  -->
+
+    {{>footer}}
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    {{>headerLink}}
+
+    <style>
+        .main_header_right figure img {
+            width: 20rem;
+            height: 26rem;
+            filter: drop-shadow(0rem 0.5rem 1rem rgba(0, 0, 0, 0.3));
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    {{>navbar}}
+
+
+    <!-- Main Header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+
+                        <input type="text" name="cityName" id="cityName" placeholder="Enter your city name"
+                            autocomplete="off">
+                        <input type="submit" value="search" id="submit" name="submit">
+
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Thursday</p>
+                        <p id="today_data">9 FEB</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Get Output Here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_inner">0</span>°C</p>
+                            <p id="temp_status"><i class="fa fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>
